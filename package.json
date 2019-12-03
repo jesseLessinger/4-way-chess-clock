@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jesseLessinger/4-way-chess-clock/issues"
   },
-  "homepage": "https://github.com/jesseLessinger/4-way-chess-clock#readme"
+  "homepage": "https://github.com/jesseLessinger/4-way-chess-clock#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

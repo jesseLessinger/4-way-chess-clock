@@ -1,0 +1,29 @@
+.clock-container {
+  margin: 0.5rem;
+}
+
+.clock {
+  padding: 1rem;
+  background: #853d74;
+  color: white;
+  font-size: 3rem;
+  width: fit-content;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #00000033;
+  font-family: Arial;
+}
+
+.reset input {
+  width: 1.4rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin: 0.2rem 0.2rem 0 0;
+}
+
+.running {
+  background-color: #cb66be;
+}
+
+.timeup {
+  background-color: #c3b0cd;
+}

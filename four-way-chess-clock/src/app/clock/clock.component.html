@@ -1,0 +1,17 @@
+
+<div class="clock-container">
+
+  <div>
+    {{ player.name }}
+  </div>
+  <div [ngClass]="{clock: true, running:player.isPlaying, timeup:player.clock.timeIsUp}" (click)="handleClick()">
+    <span *ngIf="(player.clock.minutes < 10)">0</span>{{ player.clock.minutes }}:<span *ngIf="(player.clock.seconds < 10)">0</span>{{ player.clock.seconds }}
+  </div>
+  <div class="reset">
+    <input [(ngModel)]="resetMin" [value]="resetMin">
+    <input [(ngModel)]="resetSec" [value]="resetSec">
+    <button (click)="reset(resetMin, resetSec)">reset</button>  
+  </div>
+
+  
+</div>
