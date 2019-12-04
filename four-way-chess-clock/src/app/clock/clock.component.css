@@ -1,29 +1,66 @@
 .clock-container {
-  margin: 0.5rem;
+  margin: 1.5rem;
 }
 
 .clock {
   padding: 1rem;
-  background: #853d74;
-  color: white;
+  background: #505b89;
+  color: #bfcaeb;
   font-size: 3rem;
   width: fit-content;
   border-radius: 4px;
-  box-shadow: 0 0 5px #00000033;
+  box-shadow: 0 0 2px #00000033;
   font-family: Arial;
+  margin: 0.5rem 0;
+}
+
+.clock:hover {
+  cursor: pointer;
 }
 
 .reset input {
   width: 1.4rem;
   padding: 0.4rem;
   font-size: 1rem;
-  margin: 0.2rem 0.2rem 0 0;
+  border: none;
+  background-color: #dadbf3;
+  color: #424072;
+  border-radius: 4px;
+}
+
+.reset {
+  display: flex;
+  justify-content: stretch;
+}
+
+.reset button {
+  flex-grow: 1;
+  margin-left: 0.3rem;
 }
 
 .running {
   background-color: #cb66be;
+  box-shadow: 0 0 5px 2px #e159599e;
+  color: white;
 }
 
 .timeup {
   background-color: #c3b0cd;
+  color: #d8ccdd;
+}
+
+.player-name {
+  font-weight: bold;
+  padding-top: 0.3rem;
+  color: #505b89;
+}
+
+.player-name-playing {
+  font-size: 1.3rem;
+  padding-top: 0;
+  color: #a9429c;
+}
+
+.player-name-timeup {
+  color: #c3b0cd;
 }

@@ -17,8 +17,8 @@ export class ClockComponent implements OnInit {
   constructor() { }
   
   @Input() player: Player;
-  resetMin: string = '0';
-  resetSec: string = '5';
+  resetMin: string = '10';
+  resetSec: string = '0';
 
   timeUpEmitter = new EventEmitter<boolean>();
 
@@ -39,9 +39,10 @@ export class ClockComponent implements OnInit {
   }
 
   reset(min: string, sec: string) {
-    console.log(this.resetMin, sec)
-    this.player.clock.minutes = parseInt(min);
-    this.player.clock.seconds = parseInt(sec);
+    if (this.player.clock.isPaused) {
+      this.player.clock.minutes = parseInt(min);
+      this.player.clock.seconds = parseInt(sec);
+    }
   }
  
 }

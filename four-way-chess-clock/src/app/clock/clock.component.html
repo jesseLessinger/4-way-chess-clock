@@ -1,7 +1,7 @@
 
 <div class="clock-container">
 
-  <div>
+  <div [ngClass]="{'player-name': true, 'player-name-playing':player.isPlaying, 'player-name-timeup':player.clock.timeIsUp}">
     {{ player.name }}
   </div>
   <div [ngClass]="{clock: true, running:player.isPlaying, timeup:player.clock.timeIsUp}" (click)="handleClick()">

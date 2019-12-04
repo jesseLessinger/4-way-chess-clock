@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
     this.player1.init("player 1", this.player2, this.ticker);
     this.player2.init("player 2", this.player3, this.ticker);
     this.player3.init("player 3", this.player4, this.ticker);
-    this.player4.init("player 1", this.player1, this.ticker);
+    this.player4.init("player 4", this.player1, this.ticker);
  
   }
 

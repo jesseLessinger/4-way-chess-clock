@@ -1,0 +1,14 @@
+.setup-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#main {
+  width: 70%;
+  box-shadow: 0 0 4px grey;
+  margin: auto;
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem;
+}

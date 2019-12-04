@@ -1,12 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-  {{ title }}
+<div id="main">
+  <h2>
+    {{ title }}
+  </h2>
 
   <button (click)="playPause()">play/pause</button>
 
-  <app-clock [(player)]="player1" ></app-clock>
-  <app-clock [(player)]="player2" ></app-clock>
-  <app-clock [(player)]="player3" ></app-clock>
-  <app-clock [(player)]="player4" ></app-clock>
+  <div class="setup-row">
+    <app-clock [(player)]="player3" ></app-clock>
+  </div>
+
+  <div class="setup-row">
+    <app-clock [(player)]="player2" ></app-clock>
+    <app-clock [(player)]="player4" ></app-clock>
+  </div>
+
+  <div class="setup-row">
+    <app-clock [(player)]="player1" ></app-clock>
+  </div>
+
 </div>
 

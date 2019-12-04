@@ -2,9 +2,18 @@
 button {
   border-radius: 3px;
   border: none;
-  background-color: #2d74b3;
+  background-color: #c1645e;
   padding: 0.5rem;
   font-size: 1rem;
   color: white;
   font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #d6dde8;
 }
